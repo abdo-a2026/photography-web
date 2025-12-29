@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مصور محترف لتوثيق الأعراس والمناسبات الخاصة في بغداد بأسلوب أنيق وجودة عالية.">
+    <meta name="keywords" content="تصوير أعراس, مصور بغداد, تصوير مناسبات, مصور احترافي">
+    <title>أحمد | مصور أعراس ومناسبات في بغداد</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-camera"></i>
+                <span>أحمد</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#gallery" class="nav-link">المعرض</a></li>
+                <li><a href="#about" class="nav-link">منو أني</a></li>
+                <li><a href="#booking" class="nav-link">احجز موعد</a></li>
+                <li><a href="#contact" class="nav-link">تواصل</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">نوثق لحظاتك بأعلى جودة</h1>
+            <p class="hero-subtitle">تصوير احترافي للأعراس والمناسبات الخاصة</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    احجز موعدك الآن
+                </a>
+                <a href="https://wa.me/9647XXXXXXXX" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل عبر واتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">معرض الأعمال</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="weddings">أعراس</button>
+                <button class="filter-btn" data-filter="engagement">خطوبة</button>
+                <button class="filter-btn" data-filter="graduation">تخرج</button>
+                <button class="filter-btn" data-filter="events">مناسبات</button>
+                <button class="filter-btn" data-filter="special">خاصة</button>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be loaded here from products.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="public/gallery/photo_2025-12-22_16-00-08.jpg" alt="أحمد المصور">
+                    <div class="about-image-overlay"></div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">منو أني</h2>
+                    <div class="title-divider"></div>
+                    <p class="about-paragraph">
+                        أنا أحمد، مصور فوتوغرافي محترف متخصص في توثيق الأعراس والمناسبات الخاصة في بغداد. 
+                        أؤمن بأن كل لحظة تستحق أن تُحفظ بأجمل صورة.
+                    </p>
+                    <p class="about-paragraph">
+                        مع أكثر من خمس سنوات من الخبرة، أسعى لتقديم تجربة تصوير استثنائية تجمع بين 
+                        الاحترافية والإبداع والشغف.
+                    </p>
+                    <p class="about-paragraph">
+                        هدفي هو أن أجعل لحظاتك الخاصة ذكريات خالدة تعيش معك للأبد.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>+5</h3>
+                            <p>سنوات خبرة</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>+200</h3>
+                            <p>مناسبة موثقة</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>+150</h3>
+                            <p>عميل سعيد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">آراء العملاء</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right testimonial-icon"></i>
+                    <p class="testimonial-text">تعامل راقي وجودة عالية. صور عرسنا كانت أكثر من رائعة!</p>
+                    <h4 class="testimonial-author">— سارة و محمد</h4>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right testimonial-icon"></i>
+                    <p class="testimonial-text">صور فاقت توقعاتنا بكثير. شكراً على الاحترافية والإبداع.</p>
+                    <h4 class="testimonial-author">— عائلة الجبوري</h4>
+                </div>
+                
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right testimonial-icon"></i>
+                    <p class="testimonial-text">أفضل اختيار لمناسبتنا. خدمة ممتازة وجودة استثنائية.</p>
+                    <h4 class="testimonial-author">— نور و علي</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">احجز موعدك</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">املأ النموذج وسنتواصل معك عبر واتساب</p>
+            </div>
+            
+            <div class="booking-form-container">
+                <div class="booking-form">
+                    <div class="form-group">
+                        <label for="fullName">الاسم الكامل</label>
+                        <input type="text" id="fullName" class="form-input" placeholder="أدخل اسمك الكامل" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="07XX XXX XXXX" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventType">نوع المناسبة</label>
+                        <select id="eventType" class="form-input" required>
+                            <option value="">اختر نوع المناسبة</option>
+                            <option value="عرس">عرس</option>
+                            <option value="خطوبة">خطوبة</option>
+                            <option value="تخرج">تخرج</option>
+                            <option value="حفلة">حفلة</option>
+                            <option value="أخرى">أخرى</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventDate">تاريخ المناسبة</label>
+                        <input type="date" id="eventDate" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">رسالة إضافية (اختياري)</label>
+                        <textarea id="message" class="form-input" rows="4" placeholder="أخبرنا المزيد عن مناسبتك..."></textarea>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btn-submit" id="submitBooking">
+                        <i class="fab fa-whatsapp"></i>
+                        إرسال الطلب عبر واتساب
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-camera"></i>
+                    <h3>أحمد للتصوير الفوتوغرافي</h3>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/9647XXXXXXXX" target="_blank" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-text">© 2024 أحمد للتصوير الفوتوغرافي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9647XXXXXXXX" target="_blank" class="floating-whatsapp" aria-label="تواصل معنا على واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
